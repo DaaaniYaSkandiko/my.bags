@@ -1,0 +1,407 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #f7f5f5;
+    background-color: #0b1f02; 
+}
+.container {
+    width: 85%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px 0;
+}
+main{
+    background-image: url("https://i.pinimg.com/736x/82/11/6b/82116b976a1cf74caf17231abb605b21.jpg");
+}
+
+footer{
+    background-image: url("https://i.pinimg.com/736x/74/7d/f4/747df43fcc21cb03bb28b27754fd8a2b.jpg");
+    color: #fff;
+    text-align: center;
+    padding: 25px 0;
+    border-top: 5px solid #3df0077c;
+}
+img{
+    width: 194px;
+}
+
+
+header{
+    
+    text-align: left;
+    header {
+   
+    color: #000000;
+    padding: 1em 0;
+    border-bottom: 2px solid #443d3d;
+    box-shadow: 0 2px 5px rgb(44, 5, 5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky; /* Липкий хедер */
+    top: 0;
+    z-index: 1000;
+
+
+    background-color: rgb(31, 71, 52);
+}
+img{
+    width: 360px;
+}
+}
+header nav a {
+    color: #555;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 1em;
+    padding: 5px 0;
+    position: relative; /* Для подчеркивания при наведении */
+}
+
+.arrivals-section, .shop-section {
+    padding: 60px 0;
+    text-align: center;
+    background-color: #5a3333;
+    margin-bottom: 30px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.product-item {
+    background-color: #ffffff;
+    border: 1px solid #464444;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-item:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.product-item img {
+    max-width: 100%;
+    height: 250px; /* Фиксированная высота изображений */
+    object-fit: cover; /* Чтобы изображения заполняли контейнер без искажений */
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.product-item h3 {
+    font-size: 1.6em;
+    margin-top: 0;
+    color: #333;
+}
+
+.product-item p {
+    font-size: 0.95em;
+    color: #666;
+    height: 40px; /* Фиксированная высота для описания */
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+.product-item .price {
+    font-weight: 700;
+    color: #3c9100;
+    font-size: 1.3em;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.add-to-cart-btn {
+    background-color: #5cb85c; /* Зеленая кнопка "Добавить в корзину" */
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #4cae4c;}
+    /* Секция О нас */
+.about-section {
+    padding: 60px 0;
+    background-color: #200404b2; /* Более темный серый фон */
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.about-section h2 {
+    color: #333;
+}
+
+.about-section p {
+    font-size: 1.1em;
+    max-width: 800px;
+    margin: 0 auto 15px auto;
+    color: #8b5858;
+}
+
+/* Секция Контактов */
+.contact-section {
+    padding: 60px 0;
+    background-color: #294615f1;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(90, 17, 17, 0.884);
+}
+
+.contact-section h2 {
+    color: #000000;
+}
+
+.contact-section p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+.contact-section a {
+    font-weight: 600;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 40px auto 20px auto;
+    background-color: #f8f8f8;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #1f0101;
+    font-size: 1.1em;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: calc(100% - 22px); /* Учитываем padding и border */
+    padding: 12px;
+    margin-bottom: 25px;
+    border: 1px solid #685151;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+.contact-form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+
+
+
+.contact-form button.btn:hover {
+    background-color: #680b0b59;
+}
+
+/* Основные стили для больших экранов (десктопов) - эти стили идут первыми */
+body {
+    font-size: 16px;
+    /* ... другие основные стили ... */
+}
+
+.container {
+    width: 85%;
+    max-width: 1200px;
+    /* ... */
+}
+
+/* --- Медиа-запросы --- */
+
+/* Стили для планшетов и экранов среднего размера (до 992px) */
+@media (max-width: 992px) {
+    header .container {
+        flex-direction: column; /* Элементы хедера располагаются в колонку */
+        align-items: center;
+    }
+    header nav {
+        margin-top: 15px;
+    }
+    header nav ul {
+        flex-wrap: wrap; /* Если пунктов много, они будут переноситься */
+        justify-content: center;
+    }
+    header nav li {
+        margin: 0 15px 10px 15px; /* Отступы между пунктами меню */
+    }
+
+    .hero h2 {
+        font-size: 3em; /* Уменьшаем размер заголовка на меньших экранах */
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Может быть, уже два столбца */
+        gap: 20px;
+    }
+
+    .contact-form {
+        max-width: 90%; /* Шире на планшетах */
+    }
+}
+
+/* Стили для маленьких планшетов и больших смартфонов (до 768px) */
+@media (max-width: 768px) {
+    .hero {
+        padding: 80px 0; /* Меньше отступ у hero секции */
+    }
+    .hero h2 {
+        font-size: 2.5em;
+    }
+    .hero p {
+        font-size: 1.1em;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr; /* Начинаем показывать по одному товару в ряд */
+        gap: 25px;
+    }
+
+    .product-item img {
+        height: 220px; /* Уменьшаем высоту изображений товаров */
+    }
+
+    .btn {
+        padding: 12px 25px;
+        font-size: 1em;
+    }
+}
+
+/* Стили для большинства смартфонов (до 576px) */
+@media (max-width: 576px) {
+    header h1, .logo a {
+        font-size: 1.8em; /* Уменьшаем лого/заголовок хедера */
+    }
+    header nav li {
+        margin: 5px 10px; /* Меньшие отступы для меню */
+        font-size: 0.9em;
+    }
+    .hero h2 {
+        font-size: 2em;
+    }
+    .hero p {
+        font-size: 0.9em;
+    }
+    .product-item img {
+        height: 180px; /* Еще меньше высота изображений */
+    }
+    .product-item h3 {
+        font-size: 1.4em;
+    }
+    .product-item p {
+        height: auto; /* Разрешаем тексту занимать столько места, сколько нужно */
+    }
+    .contact-form {
+        padding: 15px;
+    }
+    .contact-form input, .contact-form textarea {
+        padding: 10px;
+        margin-bottom: 15px;
+    }
+    .contact-form button.btn {
+        padding: 14px;
+        font-size: 1.1em;
+    }
+    footer .social-links a {
+        margin: 0 8px; /* Меньше отступы для ссылок в футере */
+    }
+}
+h1, h2, h3 {
+    font-family: 'Lora', serif; /* Элегантный шрифт для заголовков */
+    color: #ffffff; /* Темно-серый */
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* --- Общие базовые стили для всех интерактивных элементов (кнопок и ссылок) --- */
+/* Эти стили будут служить основой для всех кликабельных элементов, чтобы они выглядели согласованно. */
+a, button, .btn {
+    text-decoration: none; /* Убираем стандартное подчеркивание ссылок */
+    cursor: pointer; /* Делаем курсор "указателем" для всех кликабельных элементов */
+    transition: all 0.3s ease-in-out; /* Плавные переходы для всех изменений */
+    font-family: 'Montserrat', sans-serif; /* Единый шрифт для всех кнопок/ссылок */
+}
+
+/* --- Стили для основного CTA (Call To Action) кнопки ".btn" --- */
+/* Эти кнопки будут крупными и привлекательными, например, "Перейти в магазин", "Отправить" */
+.btn {
+    display: inline-block;
+    padding: 15px 35px;
+    border-radius: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    text-align: center;
+    border: none;
+    background-color: #1f360d; /* Основной акцентный цвет (сиреневый) */
+    color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+    background-color: #1a470e; /* Темнее при наведении */
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.btn:active {
+    transform: translateY(0);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* --- Стили для кнопок "Добавить в корзину" --- */
+/* Они будут выглядеть немного иначе, чтобы выделить их от основных CTA */
+.add-to-cart-btn {
+    display: inline-block; /* Убедимся, что они ведут себя как кнопки */
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-size: 1em;
+    font-weight: 600;
+    border: none;
+    background-color: #041304; /* Зеленый цвет для действия "добавить" */
+    color: #fff;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+.add-to-cart-btn:hover {
+    background-color: #112211;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+}
+
+.add-to-cart-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 35px;
+    border-radius: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    text-align: center;
+    border: none;
+    background-color: #198615af; /* Основной акцентный цвет (сиреневый) */
+    color: #421d1d;
+    box-shadow: 0 5px 15px rgba(54, 13, 13, 0.87);}
